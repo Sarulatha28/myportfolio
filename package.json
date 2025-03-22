@@ -11,7 +11,9 @@
     "react-icons": "^5.5.0",
     "react-scripts": "5.0.1"
   },
-  "homepage": "https://<Sarulatha28>.github.io/<myportfolio>",
+  "homepage": "https://Sarulatha28.github.io/myportfolio",
+
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
