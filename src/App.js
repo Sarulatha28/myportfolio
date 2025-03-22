@@ -8,14 +8,12 @@ import Project from "./components/Project";
 
 const App = () => {
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Header />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/contact-us" element={<Contact />} />
-        <Route path="/projects" element={<Project />} />
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={<Header />} />
+      <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/contact-us" element={<Contact />} />
+      <Route path="/projects" element={<Project />} />
+    </Routes>
   );
 };
 
