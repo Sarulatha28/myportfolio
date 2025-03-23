@@ -39,7 +39,7 @@ const App = () => {
             </>
           ) : (
             // Display Logo or Welcome Message
-            <div className="flex flex-col justify-center items-center h-screen bg-gradient-to-r from-[#fc00ff] to-[#00dbde] animate-fade-in-scale">
+            <div className="flex flex-col justify-center items-center h-screen  animate-fade-in-scale">
              <h1 className="font-poppins text-3xl md:text-6xl font-bold mb-4 text-white animate-bounce">
   Welcome to Sarulatha Portfolio
 </h1>
