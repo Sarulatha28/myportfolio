@@ -111,6 +111,822 @@ code {
   }
 }
 
+/* Animation for "I'M" */
+@keyframes revealIm {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.reveal-text-im {
+  opacity: 0;
+  animation: revealIm 0.8s ease-in-out forwards;
+}
+
+/* Animation for Name */
+@keyframes revealName {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.reveal-text-name {
+  opacity: 0;
+  animation: revealName 1.5s ease-in-out forwards;
+  animation-delay: 0.8s;
+}
+
+/* Animation for Role */
+@keyframes revealRole {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.reveal-text-role {
+  opacity: 0;
+  animation: revealRole 2.2s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+/* Animation for "I'M" */
+@keyframes revealIm {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.reveal-text-im {
+  opacity: 0;
+  animation: revealIm 0.8s ease-in-out forwards;
+}
+
+/* Animation for Name */
+@keyframes revealName {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.reveal-text-name {
+  opacity: 0;
+  animation: revealName 1.5s ease-in-out forwards;
+  animation-delay: 0.8s;
+}
+
+/* Animation for Role */
+@keyframes revealRole {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.reveal-text-role {
+  opacity: 0;
+  animation: revealRole 2.2s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Grow Progress Bar Animation */
+@keyframes grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.animate-grow {
+  animation: grow 1.5s ease-out forwards;
+}
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Scroll to Section Smoothly */
+html {
+  scroll-behavior: smooth;
+}
+/* Slide-In Animation */
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-slideInUp {
+  animation: slideInUp 0.8s ease-out forwards;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Scroll to Section Smoothly */
+html {
+  scroll-behavior: smooth;
+}
+/* Background Slide Animation */
+@keyframes bgSlide {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.animate-bgSlide {
+  background-size: 200% 200%;
+  animation: bgSlide 8s linear infinite;
+}
+
+/* Zoom & Fade Animation for Heading */
+@keyframes zoomFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-zoomFade {
+  animation: zoomFade 1s ease-out forwards;
+}
+
+/* Slide-In Animation */
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-slideInUp {
+  animation: slideInUp 0.8s ease-out forwards;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+/* Background Slide Animation */
+@keyframes bgSlide {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.animate-bgSlide {
+  background-size: 200% 200%;
+  animation: bgSlide 8s linear infinite;
+}
+
+/* Glow & Fade Animation for Heading */
+@keyframes glowFade {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+    transform: scale(1);
+  }
+}
+.animate-glowFade {
+  animation: glowFade 1.2s ease-out forwards;
+}
+
+/* Slide with Bounce Animation */
+@keyframes slideBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-slideBounce {
+  animation: slideBounce 1s ease-out forwards;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+/* Background Pulse Animation */
+@keyframes bgPulse {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.hover\\:animate-bgPulse:hover {
+  animation: bgPulse 4s infinite linear;
+}
+
+/* Glow & Fade Animation for Heading */
+@keyframes glowFade {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+    transform: scale(1);
+  }
+}
+.animate-glowFade {
+  animation: glowFade 1.2s ease-out forwards;
+}
+
+/* Slide with Bounce Animation */
+@keyframes slideBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-slideBounce {
+  animation: slideBounce 1s ease-out forwards;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+@keyframes bgWave {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-bg-wave {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6, #1e3a8a);
+  background-size: 300% 300%;
+  animation: bgWave 10s ease infinite alternate;
+}
+
+/* White Shade Overlay */
+.white-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+/* Skill Circle Container */
+.skill-container {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  margin: 10px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #3b82f6 0%,
+    #3b82f6 var(--progress),
+    rgba(255, 255, 255, 0.2) var(--progress),
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Animation */
+.skill-container:hover {
+  transform: scale(1.1);
+}
+
+/* Inner Circle (White Center) */
+.skill-inner {
+  width: 110px;
+  height: 110px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Skill Text */
+.skill-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+/* Skill Progress Animation */
+@keyframes loadProgress {
+  0% {
+    --progress: 0%;
+  }
+  100% {
+    --progress: var(--final-progress);
+  }
+}
+
+.animate-load {
+  animation: loadProgress 2s ease-out forwards;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .skill-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .skill-inner {
+    width: 130px;
+    height: 130px;
+  }
+
+  .skill-text {
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes circleLoad {
+  0% {
+    stroke-dashoffset: 283;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Apply animation on scroll */
+.animate-circleLoad {
+  animation: circleLoad 1.5s ease-in-out forwards;
+}
+
+/* Background Sliding Effect */
+@keyframes bgSlide {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-bgSlide {
+  background-size: 200% 200%;
+  animation: bgSlide 8s ease infinite;
+}
+
+/* Zoom and Fade Effect for Title */
+@keyframes zoomFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-zoomFade {
+  animation: zoomFade 1s ease-out;
+}
+
+/* Fade-in Up Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out;
+}
+@keyframes circleLoad {
+  0% {
+    stroke-dashoffset: 283;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Apply animation on scroll */
+.animate-circleLoad {
+  animation: circleLoad 1.5s ease-in-out forwards;
+}
+
+/* Background Sliding Effect */
+@keyframes bgSlide {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-bgSlide {
+  background-size: 200% 200%;
+  animation: bgSlide 8s ease infinite;
+}
+
+/* Zoom and Fade Effect for Title */
+@keyframes zoomFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-zoomFade {
+  animation: zoomFade 1s ease-out;
+}
+
+/* Fade-in Up Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out;
+}
+@keyframes circleLoad {
+  0% {
+    stroke-dashoffset: 283;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-circleLoad {
+  animation: circleLoad 1.5s ease-in-out forwards;
+}
+
+/* Hover Glow for Skill Circle */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+}
+
+.group-hover:animate-pulseGlow {
+  animation: pulseGlow 1.5s infinite ease-in-out;
+}
+
+/* Glow on Circle Hover */
+@keyframes circleHover {
+  0% {
+    stroke-width: 10;
+  }
+  50% {
+    stroke-width: 12;
+  }
+  100% {
+    stroke-width: 10;
+  }
+}
+
+.group-hover:animate-circleHover {
+  animation: circleHover 1.2s ease-in-out infinite;
+}
+
+/* Zoom and Fade Effect for Title */
+@keyframes zoomFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-zoomFade {
+  animation: zoomFade 1s ease-out;
+}
+
+/* Fade-in Up Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out;
+}
+@keyframes circleLoad {
+  0% {
+    stroke-dashoffset: 283;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-circleLoad {
+  animation: circleLoad 1.5s ease-in-out forwards;
+}
+
+/* Hover Glow for Skill Circle */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+}
+
+.group-hover:animate-pulseGlow {
+  animation: pulseGlow 1.5s infinite ease-in-out;
+}
+
+/* Glow on Circle Hover */
+@keyframes circleHover {
+  0% {
+    stroke-width: 10;
+  }
+  50% {
+    stroke-width: 12;
+  }
+  100% {
+    stroke-width: 10;
+  }
+}
+
+.group-hover:animate-circleHover {
+  animation: circleHover 1.2s ease-in-out infinite;
+}
+
+/* Zoom and Fade Effect for Title */
+@keyframes zoomFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-zoomFade {
+  animation: zoomFade 1s ease-out;
+}
+
+/* Fade-in Up Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Fade-in with Scale Animation */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }  
+}
+
+.animate-fade-in-scale {
+  animation: fadeInScale 1.5s ease-out forwards;
+}
+
+/* Fade-in with Delay for Subtext */
+@keyframes fadeInDelay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-delay {
+  animation: fadeInDelay 2s ease-out forwards;
+}
+
+/* Bounce Animation for Heading */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1.5s infinite;
+}
+
+
+
+
 .animate-marquee {
   display: flex;
   min-width: 200%;
@@ -173,7 +989,70 @@ code {
 .animate-fadeIn {
   animation: fadeIn 0.8s ease-out forwards;
 }
+    
 
+
+
+
+
+
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-scale-in {
+  animation: scale-in 0.5s ease-out;
+}
+@keyframes spin-fast {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-fast {
+  animation: spin-fast 0.8s linear infinite;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-zoom-in {
+  animation: zoom-in 1s ease-out;
+}
+
+@keyframes fade-in-scale {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-scale {
+  animation: fade-in-scale 1s ease-in-out;
+}
 /* Optional delay utility classes (if not using Tailwind's built-in delay classes) */
 .delay-100 {
   animation-delay: 0.1s;

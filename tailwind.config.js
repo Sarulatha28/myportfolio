@@ -4,10 +4,13 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ['playfair display', 'sans-serif'],
+      
       },
       animation: {
         "jump-in": "jumpIn 0.6s ease-in-out",
         "fade-in": "fadeIn 1.5s ease-in-out",
+        spinSlow: "spin 20s linear infinite",
+        fadeInUp: "fadeInUp 1s ease-out",
       },
       keyframes: {
         jumpIn: {
