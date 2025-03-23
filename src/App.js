@@ -2,52 +2,33 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Project from "./components/Project";
-import logo from "../src/images/online-resume (1).png"; // Update path if needed
+import "./index.css"; // Tailwind CSS should be imported here
 
 const App = () => {
   const [loading, setLoading] = useState(true);
-  const [showWelcome, setShowWelcome] = useState(false);
 
   useEffect(() => {
-    // Show "Loading..." for 1.5 seconds, then show logo for 1.5 seconds
-    const loadingTimer = setTimeout(() => {
-      setShowWelcome(true);
-    }, 1500);
-
-    const welcomeTimer = setTimeout(() => {
+    // Show loading spinner for 3 seconds before displaying content
+    const timer = setTimeout(() => {
       setLoading(false);
     }, 3000);
 
-    return () => {
-      clearTimeout(loadingTimer);
-      clearTimeout(welcomeTimer);
-    };
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="w-full h-screen">
       {loading ? (
-        // Loading Content with Animation
-        <div className="flex flex-col justify-center items-center h-screen bg-gradient-to-r from-[#b2fefa] to-[#0ed2f7] text-white">
-          {!showWelcome ? (
-            <>
-              <h1 className="text-2xl md:text-4xl font-semibold animate-pulse mb-4 animate-fade-in-scale">
-                Loading...
-              </h1>
-              {/* Loading Spinner */}
-              <div className="w-12 h-12 border-4 border-white border-t-transparent rounded-full animate-spin-fast"></div>
-            </>
-          ) : (
-            // Display Logo or Welcome Message
-            <div className="flex flex-col justify-center items-center h-screen  animate-fade-in-scale">
-             <h1 className="font-poppins text-3xl md:text-6xl font-bold mb-4 text-white animate-bounce">
-  Welcome to Sarulatha Portfolio
-</h1>
-
-              
-              
-            </div>
-          )}
+        // Loading Content with Animation (No Logo or Welcome Text)
+        <div className="flex flex-col justify-center items-center h-screen bg-black text-white">
+          {/* Circular Loading Spinner */}
+          <div className="w-16 h-16 border-4 border-gray-300 border-t-transparent rounded-full animate-spin"></div>
+          <h1
+            className="text-lg md:text-2xl font-semibold mt-4 animate-pulse"
+            style={{ fontFamily: "Poppins, sans-serif" }}
+          >
+            LOADING
+          </h1>
         </div>
       ) : (
         // Main Content after loading (Routing Setup)
