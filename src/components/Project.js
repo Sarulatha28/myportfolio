@@ -145,95 +145,116 @@ const Project = () => {
 
       {/* Projects Section */}
       <section
-        id="projects"
-        className="py-16  animate-fadeInUp font-poppins bg-gradient-to-r from-[#83a4d4] to-[#b6fbff]"
-      >
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">
-            Projects
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Customer Review and Sentiment Analysis",
-                description:
-                  "Built a system to analyze customer feedback using NLP techniques with Python, providing valuable insights from unstructured data.",
-              },
-              {
-                title: "Real-time Chat and Communication App",
-                description:
-                  "Developed a cross-platform messaging app in Java with features like group chats, file sharing, and real-time messaging using WebSockets.",
-              },
-              {
-                title: "Personal Portfolio Website",
-                description:
-                  "Built a fully responsive portfolio using React and Tailwind CSS, featuring smooth animations and an elegant design.",
-              },
-            ].map((project, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 hover:scale-105 border border-gray-200"
-              >
-                <h3 className="text-2xl font-semibold text-blue-700 mb-2">
-                  {project.title}
-                </h3>
-                <p className="text-gray-600">{project.description}</p>
-              </div>
-            ))}
+  id="projects"
+  className="py-16 animate-fadeInUp font-poppins bg-gradient-to-r from-[#83a4d4] to-[#b6fbff] animate-slideUp"
+>
+  <div className="container mx-auto px-4">
+    {/* Section Heading */}
+    <h2 className="text-4xl font-bold text-black mb-12 text-center">
+      Projects
+    </h2>
+
+    {/* Projects Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          title: "Customer Reviews on Sentiment Analysis",
+          description:
+            "Built a system to analyze customer feedback using NLP techniques with Python, providing valuable insights from unstructured data.",
+        },
+        {
+          title: "Chat Connect App",
+          description:
+            "Developed a cross-platform messaging app in Java with features like group chats, file sharing, and real-time messaging using WebSockets.",
+        },
+        {
+          title: "Portfolio Website",
+          description:
+            "Built a fully responsive portfolio using React and Tailwind CSS, featuring smooth animations and an elegant design.",
+        },
+      ].map((project, index) => (
+        <div
+          key={index}
+          className="relative group bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] p-6 rounded-2xl shadow-lg border border-gray-800 transition-all duration-300 hover:scale-105 hover:shadow-2xl overflow-hidden"
+        >
+          {/* Animated Border */}
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 group-hover:opacity-30 transition-opacity duration-500 rounded-2xl"></div>
+
+          {/* Project Content */}
+          <div className="relative z-10">
+            <h3 className="text-2xl font-semibold text-blue-400 mb-3">
+              {project.title}
+            </h3>
+            <p className="text-gray-300">{project.description}</p>
           </div>
+
+          {/* Glowing Border Animation */}
+          <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-purple-500 transition-all duration-500 animate-pulse"></div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Activities & Certifications Section */}
       <section
-        id="activities"
-        className="py-16 bg-gradient-to-r from-[#83a4d4] to-[#b6fbff] animate-slideUp"
-      >
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">
-            Activities & Certifications
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Workshop at Kongu",
-                description:
-                  "Attended an intensive workshop that enhanced my understanding of emerging technologies.",
-              },
-              {
-                title: "Symposium in Hindusthan",
-                description:
-                  "Participated in a symposium at Hindusthan focusing on Big Data Analysis and explored industry insights.",
-              },
-              {
-                title: "Cyber Security Certification",
-                description:
-                  "Earned a Cyber Security certification from Great Learning, mastering essential skills for digital protection.",
-              },
-              {
-                title: "AI Certification",
-                description:
-                  "Completed AI certification from Novitach, gaining expertise in advanced data processing and analysis.",
-              },
-              {
-                title: "Microsoft Office Essentials",
-                description:
-                  "Completed a course on Microsoft Office Essentials, enhancing my professional document handling skills.",
-              },
-            ].map((activity, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:scale-105"
-              >
-                <h3 className="text-2xl font-semibold text-blue-700 mb-2">
-                  {activity.title}
-                </h3>
-                <p className="text-gray-600">{activity.description}</p>
-              </div>
-            ))}
+  id="activities"
+  className="py-16 bg-gradient-to-r from-[#83a4d4] to-[#b6fbff] animate-slideUp"
+>
+  <div className="container mx-auto px-4">
+    <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">
+      Activities & Certifications
+    </h2>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {[
+        {
+          title: "Workshop at Kongu",
+          description:
+            "Attended an intensive workshop that enhanced my understanding of emerging technologies.",
+        },
+        {
+          title: "Symposium in Hindusthan",
+          description:
+            "Participated in a symposium at Hindusthan focusing on Big Data Analysis and explored industry insights.",
+        },
+        {
+          title: "Cyber Security Certification",
+          description:
+            "Earned a Cyber Security certification from Great Learning, mastering essential skills for digital protection.",
+        },
+        {
+          title: "AI Certification",
+          description:
+            "Completed AI certification from Novitach, gaining expertise in advanced data processing and analysis.",
+        },
+        {
+          title: "Microsoft Office Essentials",
+          description:
+            "Completed a course on Microsoft Office Essentials, enhancing my professional document handling skills.",
+        },
+      ].map((activity, index) => (
+        <div
+          key={index}
+          className="relative group bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] p-6 rounded-2xl shadow-lg border border-gray-700 transition-all duration-300 hover:scale-105 hover:shadow-2xl overflow-hidden"
+        >
+          {/* Hover Glow Effect */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#3bc9db] to-[#3a6073] opacity-0 group-hover:opacity-30 transition-opacity duration-500 rounded-2xl"></div>
+
+          <div className="relative z-10">
+            <h3 className="text-2xl font-semibold text-[#3bc9db] mb-2">
+              {activity.title}
+            </h3>
+            <p className="text-gray-300">{activity.description}</p>
           </div>
+
+          {/* Border Glow on Hover */}
+          <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-[#3bc9db] transition-all duration-500 animate-pulse"></div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Footer */}
       
@@ -245,7 +266,7 @@ const Project = () => {
       {/* Contact/Content Section */}
       <div className="text-center md:text-left animate-fadeIn delay-100">
         <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
-          My Portfolio
+          Portfolio
         </h3>
         <p className="text-gray-400 text-sm md:text-base">
           © {new Date().getFullYear()} Sarulatha. All rights reserved.

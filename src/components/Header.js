@@ -2,7 +2,6 @@ import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from 'react-router-dom';
 import img2 from '../images/3d.jpg'
 import { FaLinkedin, FaInstagram, FaSuitcase, FaGithub, FaEnvelope } from 'react-icons/fa';
-
 const skillsData = [
   { name: "HTML", value: 70 },
   { name: "CSS", value: 70 },
@@ -12,14 +11,12 @@ const skillsData = [
   { name: "C", value: 50 },
   { name: "Python", value: 75 },
 ];
-
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
   const [hover, setHover] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   // Detect scroll to change card design
-  // Detect scroll position to optionally change card design
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 200) {
@@ -32,7 +29,6 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   const [visible, setVisible] = useState(false);
-
   // Check if the skills section is in the viewport
   useEffect(() => {
     const handleScroll = () => {
@@ -106,11 +102,11 @@ const Header = () => {
   }, []);
   const educationData = [
     {
-      degree: "B.E - Computer Science",
+      degree: "B.E - Computer Science Engineering ",
       institution: "Angel College Of Engineering And Technology",
       year: "2022 - 2026",
       description:"Specializing in software developmentand ,Full Stack Development",
-      CGPA: "79.5%",
+      CGPA: "8.55%",
     },
     {
       degree: "Higher Secondary Education",
@@ -420,12 +416,12 @@ const Header = () => {
 </h2>
 
 
-        {/* Education Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+       {/* Education Grid */}
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
   {educationData.map((edu, index) => (
     <div
       key={index}
-      className="relative bg-gradient-to-r from-purple-800 to-purple-900 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 overflow-hidden flex flex-col h-full"
+      className="relative bg-gradient-to-r from-purple-800 to-purple-900 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 overflow-hidden flex flex-col justify-between h-full min-h-[300px]"
     >
       {/* Animated Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-500 opacity-0 group-hover:opacity-20 rounded-2xl transition-opacity duration-500"></div>
@@ -434,10 +430,10 @@ const Header = () => {
       <span className="absolute top-2 right-2 text-sm text-gray-400">{edu.year}</span>
 
       {/* Card Content */}
-      <div className="mb-4 flex-grow">
+      <div className="mb-3 flex-grow">
         <h3 className="text-2xl font-semibold text-white">{edu.degree}</h3>
-        <p className="text-lg mt-5 text-gray-300">{edu.institution}</p>
-        <p className={`mt-5 text-gray-300 ${index > 0 ? 'lg:pt-4' : ''}`}>{edu.description}</p>
+        <p className="text-lg mt-4 text-gray-300">{edu.institution}</p>
+        <p className={`mt-5 text-gray-300 ${index > 0 ? 'lg:pt-3' : ''}`}>{edu.description}</p>
       </div>
 
       {/* Conditional Rendering for CGPA and Percentage */}
@@ -448,13 +444,16 @@ const Header = () => {
         </div>
       ) : index === 1 ? (
         // Second Card: Percentage at Bottom-Right
-        <div className="mt-6 text-gray-300">
+        <div className="mt-auto text-gray-300">
           <p className="text-right">Percentage: {edu.percentage}</p>
         </div>
-      ) : null /* Third Card: No Percentage */}
+      ) : (
+        <div className="mt-auto"></div> // Maintain same height for third card
+      )}
     </div>
   ))}
 </div>
+
 
 
       </div>
@@ -466,7 +465,7 @@ const Header = () => {
       {/* Contact/Content Section */}
       <div className="text-center md:text-left animate-fadeIn delay-100">
         <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
-          My Portfolio
+         Portfolio
         </h3>
         <p className="text-gray-400 text-sm md:text-base">
           © {new Date().getFullYear()} Sarulatha. All rights reserved.
