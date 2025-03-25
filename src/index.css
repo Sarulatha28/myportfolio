@@ -1049,7 +1049,9 @@ html {
     opacity: 1;
   }
 }
-
+.animate-progress {
+  transition: width 0.3s ease-in-out;
+}
 .animate-fade-in-scale {
   animation: fade-in-scale 1s ease-in-out;
 }
